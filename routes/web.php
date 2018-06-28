@@ -348,3 +348,8 @@ Route::get('user/pivot', function(){
     }
 
 });
+
+Route::get('/user/country',function(){
+
+
+});
