@@ -15,7 +15,7 @@ class AddDeletedAtColumnToPostTable extends Migration
     {
         Schema::table('posts', function (Blueprint $table) {
             //
-            $table->integer('user_id')->unsigned();
+            $table->timestamp('deleted_at')->useCurrent();
         });
     }
 
