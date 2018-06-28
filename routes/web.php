@@ -323,7 +323,6 @@ Route::get('/', function () {
 
 
 
-
 //MANY TO MANY RELATIONSHIP
 
 //Route::get('/user/{name}/role', function($id){
