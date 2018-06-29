@@ -1,7 +1,7 @@
 <?php
 use App\Post;
 use App\User;
-
+use App\Country;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,6 +15,13 @@ use App\User;
 //
 Route::get('/', function () {
     return view('welcome');
+});
+Route::get('/learning', function () {
+    return view('learning');
+});
+
+Route::get('/learning2', function () {
+    return view('learning2');
 });
 //
 //
@@ -338,18 +345,25 @@ Route::get('/', function () {
 
  // Accessing the intermediate table / pivot;
 
-Route::get('user/pivot', function(){
+//Route::get('user/pivot', function(){
+//
+//    $user = User::find(1);
+//
+//    foreach($user->roles as $role){
+//
+//        return $role->pivot;
+//    }
+//
+//});
+//
+//Route::get('/user/country',function(){
+//
+//    $country = Country::find(2);
+//
+//    foreach($country->posts as $post) {
+//
+//        return $post->title;
+//    }
+//
+//});
 
-    $user = User::find(1);
-
-    foreach($user->roles as $role){
-
-        return $role->pivot;
-    }
-
-});
-
-Route::get('/user/country',function(){
-
-
-});
