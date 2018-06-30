@@ -76,7 +76,7 @@
 //foreach ($poes as $kleur){
 //    echo "$kleur</br>";
 //}
-
+//$poes[3];
 
 //--------------------------------------------------------------------------------------------
 //ASSOC ARRAY
@@ -93,7 +93,7 @@
 //foreach ($poes as $die_key => $die_value) {
 //    echo "$die_key is $die_value</br>";
 //}
-
+//$poes['auxtionist'];
 
 //--------------------------------------------------------------------------------------------
 //FUNCTIONS
@@ -130,4 +130,56 @@
 //{
 //    return "$fname Fourie is born in year $year and is now $age years old.</br>";
 //}
+
+//--------------------------------------------------------------------------------------------
+//SPLITTING THE ARRAY INTO INDIVIDUAL OPTIONS
+//--------------------------------------------------------------------------------------------
+
+//$cars = array("volvo", "vw", "toyota");
+//echo "I like $cars[0] and $cars[1] but not a big fan of $cars[2]";
+
+
+//--------------------------------------------------------------------------------------------
+//COUNTING ARRAYS
+//--------------------------------------------------------------------------------------------
+
+//$cars= array("vw","toyota","bmw");
+//echo count($cars);
+
+
+//--------------------------------------------------------------------------------------------
+//ASSOC ARRAYS EXAMPLE
+//--------------------------------------------------------------------------------------------
+//        $age = array("daniel"=>"34","susan"=>"60","spyker"=>"29");
+//        foreach($age as $name => $name_value){
+//            echo "his name is ". $name . " and he is aged ". $name_value ;
+//            echo "</br>";
+//
+//
+//        }
+
+
+
+?>
+
+
+
+<html>
+    <body>
+
+        <form action="welcome_get.php" method="post">
+        Name: <input type="text" name="name"><br>
+        E-mail: <input type="text" name="email"><br>
+        <input type="submit">
+        </form>
+
+    </body>
+</html>
+
+
+{{--<form action="welcome_get.php" method="get">--}}
+    {{--Name: <input type="text" name="name"><br>--}}
+    {{--E-mail: <input type="text" name="email"><br>--}}
+{{--<input type="submit">--}}
+{{--</form>--}}
 

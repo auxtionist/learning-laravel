@@ -16,13 +16,25 @@ use App\Country;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/learning', function () {
+
+Route::get('/jeanpierre/examples', function () {
     return view('learning');
+})->name('learning');
+
+//->name('learning')
+
+Route::get('/w3school/examples', function () {
+    return view('learning2');
+})->name('learning2');
+
+Route::get('/welcome/get', function () {
+    return view('welcome_get');
+})->name('welcome_get');
+
+Route::get('/phpdata', function () {
+    return view('phpdata');
 });
 
-Route::get('/learning2', function () {
-    return view('learning2');
-});
 //
 //
 //

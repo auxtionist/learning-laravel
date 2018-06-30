@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Laravel is kewl</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -14,15 +14,15 @@
         <style>
             html, body {
                 background-color: #fff;
-                color: #636b6f;
+                color: green;
                 font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
+                font-weight: 60;
+                height: 60vh;
                 margin: 0;
             }
 
             .full-height {
-                height: 100vh;
+                height:80vh;
             }
 
             .flex-center {
@@ -50,13 +50,13 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: mediumpurple;
                 padding: 0 25px;
                 font-size: 12px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
-                text-transform: uppercase;
+                text-transform: lowercase;
             }
 
             .m-b-md {
@@ -83,7 +83,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
+                    <a href="{{route('learning')}}">Learning</a>
+                    <a href="{{route('learning2')}}">Learning2</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
